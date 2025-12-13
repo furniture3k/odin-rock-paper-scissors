@@ -9,4 +9,15 @@ function getComputerChoice(num) {
     return choices[num];
 }
 
-console.log(getComputerChoice())
+function getHumanChoice(hum) {
+    let input = prompt("type either Rock, Paper, or Scissors: ");
+    return input;
+}
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    humanChoice = getHumanChoice().toLowerCase();
+    computerChoice = getComputerChoice().toLowerCase();
+}
