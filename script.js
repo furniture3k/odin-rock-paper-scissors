@@ -14,10 +14,11 @@ function getHumanChoice(hum) {
     return input;
 }
 
-let humanScore = 0;
-let computerScore = 0;
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
 
-function playRound(humanChoice, computerChoice) {
+    function playRound(humanChoice, computerChoice) {
     humanChoice = getHumanChoice();
     computerChoice = getComputerChoice();
 
@@ -39,6 +40,13 @@ function playRound(humanChoice, computerChoice) {
         console.log("Your score: " + humanScore);
         console.log("Computer score: " + computerScore);
     }
+
+}
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
 }
 
-playRound();
+playGame();
