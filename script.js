@@ -40,3 +40,5 @@ function playRound(humanChoice, computerChoice) {
         console.log("Computer score: " + computerScore);
     }
 }
+
+playRound();
